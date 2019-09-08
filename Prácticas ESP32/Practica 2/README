@@ -8,14 +8,18 @@ Link del video:
 	https://www.youtube.com/watch?v=XhtOSRDtpio
 
 Descripción del funcionamiento:
-
-
-
+	En la pantalla de la computadora, despues de hacer la conexión serial mediante el UART podemos observar como dice que 
+	"Boton no presionado" y esto es porque el ESP32 recibe información sobre el estado de nuestro boton (push-button)
+	y cuando lo presionamos se mostrará un mensaje de "Boton presionado". Así mismo cuando se presiona el número 1 en el
+	teclado de la computadora el LED se enciende y si se presiona el número 0 se apaga el LED
+	
 Objetivo:
 	Utilizar la conexión serial UART  del ESP32 para prender y apagar un LED dsede la computadora, 
 	así cómo mostrar el estado de un switch constantemente.
 
 Desarrollo:
+	Para esta práctica nos basamos en el código ejemplo del UART y utilizamos el UART 0 que esta incluido en el ESP32,
+	lo configuramos para que su transmision y recepción opere a 115200 baudios. Ahi configuramos en la parte de la
+	Transmision (TX) la parte de la lectura del estado de boton y en la parte de la Recepcion (RX) la parte del encendido
+	y apagado del LED.
 
-
-na descripción del funcionamiento, considerando a) Objetivo, y b) Desarrollo, ésto debe ser breve pero conciso.
