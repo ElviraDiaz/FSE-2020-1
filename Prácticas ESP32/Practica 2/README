@@ -1,0 +1,21 @@
+FSE 2020-1 -- Practica 2
+
+Nombres de los integrantes:
+	Balcázar Rodríguez Adan Alí
+	Díaz Gutiérrez Elvira Angela Belem
+	
+Link del video:
+	https://www.youtube.com/watch?v=XhtOSRDtpio
+
+Descripción del funcionamiento:
+
+
+
+Objetivo:
+	Utilizar la conexión serial UART  del ESP32 para prender y apagar un LED dsede la computadora, 
+	así cómo mostrar el estado de un switch constantemente.
+
+Desarrollo:
+
+
+na descripción del funcionamiento, considerando a) Objetivo, y b) Desarrollo, ésto debe ser breve pero conciso.
