@@ -1,0 +1,29 @@
+FSE 2020-1 -- Practica 4
+
+Nombres de los integrantes:
+	Balcázar Rodríguez Adan Alí
+	Díaz Gutiérrez Elvira Angela Belem
+	
+Link del video:
+	https://www.youtube.com/watch?v=Ja-RuYJ2W_k&feature=youtu.be
+
+Objetivos:
+	1.-El alumno conocerá la configuración, la programación y el uso del módulo UART (Universal Asynchronous Receiver 
+	Transmitter ) para implementar comunicaciones de tipo serial, particularmente bajo el estándar RS-232.
+	2.- Crear un programa en python en el cual se envie un mensaje, mediante comunicación serial, desde la raspberry 
+	pi hacia la computadora 
+	3.- Crear un programa en python en el cual se envie una trama de información desde la computadora hacia la raspberry
+	pi y la raspberry manipule dicha trama para mostrarla con un formato especifico.
+	
+Descripción de la práctica:
+	La practica consiste en tres partes, la primera es la conexión del modulo UART y la configuración de este, asi como 
+	iniciar la comunicación serial abriendo las terminales en la raspberry y en la computadora.
+	La segunda parte consiste en hacer que la Raspberry envie a la PC 16 veces una cadena cambiando el número inicial
+	en cada interación.
+	La tercera parte consiste en que la raspberry reciba una cadena proveniente de la computadora,despues de recibir la 
+	trama la raspberry debe verificar que tenga el formato numero entero,iniciales,numero binario,numero decimal , para 
+	hacer esto debe leer dato por dato y separarlo en diferentes variables cada vez que encuentre una coma, despues los
+	castea a su tipo correspondiente y revisa que el número entero este entre 0 y 4095, que el binario sea 0 o 1, que 
+	el numero decimal sea un número entre 0.0 y 3.3; si cumple con todas las condiciones imprimira los datos indicando
+	los valores de cada uno, en caso contrario unicamente mostrará un mensaje diciendo que parte que la trama es invalida,
+	es decir, que valores no cumplen con las restricciones.
