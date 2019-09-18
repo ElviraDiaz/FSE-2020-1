@@ -1,0 +1,40 @@
+FSE 2020-1 -- Practica 3 y Primer parcial
+
+Nombres de los integrantes:
+	Balcázar Rodríguez Adan Alí
+	Díaz Gutiérrez Elvira Angela Belem
+
+Componentes:
+	* Raspberry Pi 3B+
+	* ESP32 DevKit
+	* Sensor de Temperatura LM335
+	* USB - UART TTL 3.3v
+	* Resistencias, potenciómetro
+	* Cables de conexión
+
+Descripción del funcionamiento:
+	El proyecto consiste en realizar una medición de temperatura por medio del CAD del ESP32 conectado en uno de sus canales al LM335.
+	Una vez con la medición del CAD, se procede a realizar la conversión del valor obtenido (un número entre 0 y 4095) a grados Kelvin y de grados Kelvin
+	a grados Celsius. Una vez obtenidos estos tres valores, se concatenan en una misma cadena separada por comas y se envían por medio del puerto UART 2
+    del ESP32 al UART 0 de la Raspberry Pi. 
+	
+    En la Raspberry se encuentra corriendo un programa en Python que está a la escucha de cualquier dato y va recopilando la cadena de datos hasta que se 
+	lee un caracter de salto de línea (\n). Con la cadena reconstruida, se realiza un split de los datos para almacenarlos por separado. Con los 3 valores 
+	recibidos se vuelve a dar un formato a la información; pero ahora con una estructura amigable para el usuario, enviándose esta nueva cadena la computadora
+	por medio del UART, la cual recibe los datos por medio del USB-UART TTL y los muestra en el monitor serie del COM asignado a dicho módulo.
+	
+Consideraciones técnicas:
+	Para el uso del sensor de temperatura LM335 se utilizaron 3 resistores: un potenciómetro de 1 [Kohm] y un par de resistencias de carbón de 2.2 [Kohm] y 
+	de 330 [ohm] conectadas en serie. El potenciómetro es utilizado para establecer la línea base de medición del sensor, la cual se debe ajustar a un valor
+	cercano al de la temperatura ambiente del lugar. Por otro lado, las resistencias de carbón son utilizadas como parte del diagrama de conexión provisto
+	por la datasheet, la cual establece que éstas deben de ser de tal valor que la corriente que fluye a través del sensor sea de 1 [mA]. Debido a que el voltaje
+	suministrado en el pin de 3.3 [V] y el pin de GND de la ESP32 en realidad entrega un voltaje de 2.7 [V], la resistencia ideal a utilizar debería ser de 
+	2.7 [Kohm]; sin embargo, no existe una resistencia comercial con este valor, por lo que se optó por obtener una resistencia aproximada de 2530 [ohm] con 
+	las resistencias mencionadas anteriormente. Estas resistencias permiten que el flujo de corriente a través del sensor sea de 1.067 [mA] el cual es un 
+	valor muy cercano al ideal. 
+	
+	
+	
+
+
+
