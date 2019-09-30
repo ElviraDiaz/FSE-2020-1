@@ -1,0 +1,20 @@
+FSE 2020-1 -- Practica 5
+
+Nombres de los integrantes:
+	Balcázar Rodríguez Adan Alí
+	Díaz Gutiérrez Elvira Angela Belem
+	
+Link del video:
+	https://www.youtube.com/watch?v=c7Ogs-HwOtE
+
+Objetivo:
+	Crear un programa en python en el cual cree un archivo en una USB, el nombre de dicho archivo y el número de repeticiones del texto
+	que se deberá colocar en dicho archivo dependerá de los parametros recibidos por consola
+	
+Descripción de la práctica:
+	Al ejecutar el programa en python se debe especificar el nombre del archivo y el número de iteraciones a escribir,
+	el archivo especificado se creará dentro de una memoria USB cuyo contenido tendrá el siguiente formato: 
+		#,Hola USB, data # 
+	Donde # es el número de repetición escrita y estas iteraciones van desde la cero hasta el número que se recibió por consola.
+	En este caso, el modo de apertura del archivo utilizado es "w" el cual indica sólo escritura, además de que cada vez que se 
+	ejecute el programa, se sobreescribirá el contenido del archivo, en caso de existir, en caso contrario, se creará.
