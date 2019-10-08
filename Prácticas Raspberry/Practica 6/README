@@ -1,0 +1,22 @@
+FSE 2020-1 -- Practica 6
+
+Nombres de los integrantes:
+	Balcázar Rodríguez Adan Alí
+	Díaz Gutiérrez Elvira Angela Belem
+	
+Link del video:
+	https://www.youtube.com/watch?v=Sz_ADS5C0eo
+
+Objetivo:
+	Crear un programa en python en el cual cree un archivo en una USB, el nombre de dicho archivo y el número de repeticiones del texto
+	que se deberá colocar en dicho archivo dependerá de los parámetros recibidos por consola. Dentro del texto indicará la fecha y hora 
+	a las cuales se tomaron las muestras de tiempo que se imprimeron en las repeticiones y estas deberán tener un segundo de diferencia.
+	
+Descripción de la práctica:
+	Al ejecutar el programa en python se debe especificar el nombre del archivo y el número de iteraciones a escribir,
+	el archivo especificado se creará dentro de una memoria USB cuyo contenido tendrá el siguiente formato: 
+		Muestra # tomada a las: T\n"
+	Donde # es el número de muestra tomada y estas van desde la uno hasta el número que se recibió por consola y T es el tiempo,es decir,
+	el año,mes,día,hora, minuto y segundo en que la muestra fue tomada. 
+	En este caso, el modo de apertura del archivo utilizado es "w" el cual indica sólo escritura, además de que cada vez que se 
+	ejecute el programa, se sobreescribirá el contenido del archivo, en caso de existir, en caso contrario, se creará.
