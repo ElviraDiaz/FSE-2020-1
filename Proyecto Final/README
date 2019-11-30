@@ -1,0 +1,20 @@
+FSE 2020-1 -- Proyecto Final
+
+Nombres de los integrantes:
+	Balcázar Rodríguez Adan Alí
+	Díaz Gutiérrez Elvira Angela Belem
+	
+Link del video:
+	https://www.youtube.com/watch?v=iO9tKhcYOKo
+
+Objetivo:
+	Desarrollar una aplicación de LoRaWAN, LoRaWAN​ es un protocolo de red que usa la tecnología LoRa y por su parte LoRa es una tecnología 
+	inalámbrica al igual que WiFi o Bluetooth, pero tiene la caracteristica de que es de largo alcance y baja transferencia de datos.
+	
+Descripción 
+	El proyecto consiste en un sistema de riego que se conforma por dos nodos montados en un ESP32 cada uno: uno que controla y el otro 
+	que monitorea y un gateway montado en una raspberry Pi. Uno de los nodos se encarga de sensar la temperatura del ambiente y la humedad
+	de la tierra permitiendonos monitorear el estado de nuestro plantio.El otro nodo tiene una pantalla LCD donde se muestran los valores de
+	temperatura y humedad que recibe y basandose en estos valores el usuario puede elegir cuando pulsar el boton que enciende la bomba de agua
+	y cuando la apaga.El gateway nos permite saber todo lo que se han enviado entre los nodos y así mismo si se quisiese conectar a internet
+	se podría diseñar una pagina web para hacerlo más amigable con el usuario.
